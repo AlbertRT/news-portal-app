@@ -1,0 +1,79 @@
+// * header
+@media screen and (max-width: 320px) {
+    .header {
+        .search-box {
+            .menu {
+                flex: .1;
+                .ipInfoIcon {
+                    display: none;
+                }
+            }
+            .input {
+                margin-left: 1rem;
+            }
+
+        }
+        .topic-selection {
+            padding: 1rem;
+        }
+    }
+
+    .main {
+        padding: 0 1rem;
+
+        ._main {
+            .weather_widget {
+                display: none;
+            }
+            .top-stories {
+                .top-stories-list {
+                    .top {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .other {
+                        .more_news_card {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        .search-box {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                flex: .3;
+                .ipInfoIcon {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .main {
+        padding: 0 6rem;
+
+        ._main {
+            .weather_widget {
+                display: unset;
+            }
+            .top-stories {
+                .top-stories-list {
+                    .top {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .other {
+                        .more_news_card {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

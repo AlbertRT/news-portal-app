@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/weather.widget.css">
+    <link rel="stylesheet" href="css/news.card.css">
+    <link rel="stylesheet" href="css/offline.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search-box">
+            <div class="input">
+                <input type="text" placeholder="Search a topics" id="searchNews" class="search-news">
+                <div class="search-icon">
+                    <i class='bx bx-search-alt-2'></i>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="ipInfoIcon">
+                    <div class="_country__location">
+                        <div class="icon"><i class='bx bx-map-pin'></i></div>
+                        <div class="location"></div>
+                    </div>
+                    <div class="_language">
+                        <div class="icon"><i class='bx bx-globe'></i></div>
+                        <div class="lang"></div>
+                    </div>
+                </div>
+                <div class="theme_swither"><i class="bx bx-moon"></i></div>
+            </div>
+        </div>
+        <section class="topic-selection">
+            <div class="topics-list">
+                <ul class="topics">
+                    <li class="active topic home">Home</li>
+                    <li class="topic" data-topic="Sport">Sport</li>
+                    <li class="topic" data-topic="Finance">Finance</li>
+                    <li class="topic" data-topic="Buisness">Buisness</li>
+                    <li class="topic" data-topic="Travel">Travel</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <section class="main">
+        <div class="welcome-text">
+            <span>News For You</span>
+            <div class="today"></div>
+        </div>
+
+        <main class="_main">
+            <div class="news_main">
+                <div class="news-list">
+                    
+                </div>
+            </div>
+            <div class="weather_widget">
+                <div class="weather_information">
+                    <div class="__current_temperature metric">
+                        <span class="temp"></span>
+                        <span class="_deg__symbol">&deg;</span>
+                    </div>
+                    <div class="__client_location-__current_weather">
+                        <div class="_client_location"></div>
+                        <div class="__current-weather"></div>
+                    </div>
+                    <div class="__weather_icon">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="__hourly_weather">
+                    
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <div class="pop_up_notification_container"></div>
+    
+    <script src="js/module/moment-with-locales.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

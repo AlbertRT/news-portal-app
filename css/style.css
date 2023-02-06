@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.ttf");
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: system-ui;
+  background: #f4f2f2;
+  transition: all 250ms;
+}
+body.theme__dark {
+  background: #171717;
+}
+
+.main {
+  padding: 0 6rem;
+  width: 100%;
+  margin-top: 11rem;
+  margin-bottom: 5rem;
+}
+.main.offline {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.main .welcome-text {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.main .welcome-text span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main .welcome-text .today {
+  font-size: 0.9rem;
+  color: #757575;
+  margin-top: 0.3rem;
+}
+.main .welcome-text.dark__theme {
+  color: #fff;
+}
+.main ._main {
+  display: flex;
+}

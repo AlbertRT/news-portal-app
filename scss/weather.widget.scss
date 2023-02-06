@@ -1,0 +1,83 @@
+.weather_widget {
+    background: #fff;
+    transition: all 250ms;
+    flex: .4;
+    height: max-content;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+    user-select: none;
+    font-family: "Open Sans";
+
+    &.dark__theme {
+        background: #0d0d0d;
+        
+        .weather_information {
+            color: #fff;
+            .__current_temperature {
+                ._deg__symbol {
+                    color: #6363639f;
+                }
+            }
+        }
+        .__hourly_weather {
+            color: #a2a2a29f;
+        }
+    }
+
+    .weather_information {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #000;
+
+        .__current_temperature {
+            display: flex;
+            align-items: flex-start;
+
+            .temp {
+                font-weight: 900;
+                font-size: 2.5rem;
+            }
+            ._deg__symbol {
+                font-size: 2.5rem;
+                color: #5555559f;
+            }
+        }
+
+        .__client_location-__current_weather {
+            font-size: .8rem;
+        }
+        .__weather_icon {
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+
+    .__hourly_weather {
+        color: #3939399f;
+        margin-top: .5rem;
+        font-size: .8rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: .5rem;
+
+        .__hourly_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            ._icon {
+                margin: .4rem 0;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
